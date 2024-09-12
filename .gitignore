@@ -1,0 +1,50 @@
+# macOS system files
+.DS_Store
+
+# Xcode files
+*.xcuserstate
+*.xcworkspace
+xcuserdata/
+DerivedData/
+build/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+
+# Swift Package Manager
+/.build/
+/Package.resolved
+.swiftpm/xcode/package.xcworkspace/
+
+# Xcode automatically generated schemes
+xcshareddata/xcschemes/*.xcscheme
+
+# Assets
+*.xcassets/*/Contents.json
+
+# FastAPI project specific
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+
+# Python virtual environment
+venv/
+env/
+*.egg-info/
+*.log
+
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+
+# Test output
+test_main.http
+
+# Ignore node_modules if any frontend is added
+node_modules/
+
+# Logs and temporary files
+*.log
+*.tmp
