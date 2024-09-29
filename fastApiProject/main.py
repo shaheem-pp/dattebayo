@@ -99,7 +99,7 @@ def request_url(endpoint: str):
 @app.get("/characters/")
 async def characters():
     try:
-        data = request_url("characters/?page=142&limit=10")
+        data = request_url("characters/?page=1&limit=10")
         characters = data.get("characters", [])
         character_data = [
             {
@@ -109,6 +109,8 @@ async def characters():
             }
             for character in characters
         ]
+
+        character_data.append({"id": None, "name": None, "images": None})
 
         return {
             "message": "success",

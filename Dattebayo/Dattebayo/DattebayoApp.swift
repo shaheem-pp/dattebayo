@@ -11,7 +11,7 @@ import SwiftUI
 struct DattebayoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CharactersListView()
         }
     }
 }
